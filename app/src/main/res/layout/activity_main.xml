@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/xtroke1">
+
+        <LinearLayout
+            android:id="@+id/gamename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xtroke1"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="XicXacXoe"
+                android:textColor="@color/X"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/xname"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:background="@drawable/xtroke"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="O"
+            android:textColor="@color/X"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toTopOf="@+id/display"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/oname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gamename" />
+
+        <TextView
+            android:id="@+id/oname"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:background="@drawable/xtroke"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/X"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toTopOf="@+id/display"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/xname"
+            app:layout_constraintTop_toBottomOf="@+id/gamename" />
+
+        <LinearLayout
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xtroke1"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/game"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gamename">
+
+            <TextView
+                android:id="@+id/display_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/X"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/game"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:background="@drawable/xtroke1"
+            app:layout_constraintBottom_toTopOf="@+id/Company_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/display">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="0"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn3"
+                app:layout_constraintEnd_toStartOf="@id/btn1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="1"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn4"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintStart_toEndOf="@+id/btn0"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="2"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="3"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toTopOf="@id/btn6"
+                app:layout_constraintEnd_toStartOf="@+id/btn4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn0" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="4"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toTopOf="@id/btn7"
+                app:layout_constraintEnd_toStartOf="@+id/btn5"
+                app:layout_constraintStart_toEndOf="@id/btn3"
+                app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="5"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toTopOf="@id/btn8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn4"
+                app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="6"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="7"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn8"
+                app:layout_constraintStart_toEndOf="@+id/btn6"
+                app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xtroke"
+                android:tag="8"
+                android:textColor="@color/X"
+                android:textSize="70sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn7"
+                app:layout_constraintTop_toBottomOf="@id/btn5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/Company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xtroke1"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="XOKSIS"
+            android:textColor="@color/X"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/btnretry"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xtroke"
+            android:fontFamily="monospace"
+            android:text="Retry"
+            android:textColor="@color/X"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/Company_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/game" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

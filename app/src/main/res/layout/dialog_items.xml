@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="280dp"
+    android:background="@drawable/xtroke1">
+
+
+    <TextView
+        android:id="@+id/dialog_name"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xtroke1"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Enter your name."
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/player_o_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Player O"
+        android:textSize="21sp"
+        android:paddingLeft="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/player_x_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_name" />
+
+    <EditText
+        android:id="@+id/player_x_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Player X"
+        android:textSize="21sp"
+        android:paddingLeft="7dp"
+        app:layout_constraintBottom_toTopOf="@id/button_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_o_name" />
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/xtroke1"
+        android:text="Play"
+        android:textColor="@color/X"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_x_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
