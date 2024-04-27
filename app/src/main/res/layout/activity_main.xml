@@ -35,7 +35,6 @@
 
         </LinearLayout>
 
-
         <TextView
             android:id="@+id/xname"
             android:layout_width="140dp"
@@ -84,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="serif-monospace"
                 android:gravity="center"
-                android:text=""
+                android:text="Turn for O"
                 android:textColor="@color/X"
                 android:textSize="30sp"
                 android:textStyle="italic" />
